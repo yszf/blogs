@@ -1,5 +1,5 @@
 <div class="row-fluid">
-                    
+
 <div class="btn-toolbar">
     <a class="btn btn-primary" href="/admin/addblog"><i class="icon-plus"></i>添加博客</a>
   <div class="btn-group">
@@ -18,7 +18,7 @@
       <tbody>
         {{range .Blogs}}
           <tr>
-	 
+
           <td>{{.id}}</td>
           <td>{{.title}}</td>
 		  <td>{{.created}}</td>
@@ -26,7 +26,7 @@
               <a href="/admin/editblog/{{.id}}"><i class="icon-pencil"></i></a>
               <a href="/admin/delblog/{{.id}}" role="button" data-toggle="modal"><i class="icon-remove"></i></a>
           </td>
-	        
+
         </tr>
         {{end}}
       </tbody>
@@ -36,7 +36,7 @@
 
 <div class="pagination">
 
-		{{markdown .PageStr}}
-    
+		{{ .PageStr }}<!-- |markdown -->
+
 </div>
 

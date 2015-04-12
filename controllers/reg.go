@@ -1,7 +1,7 @@
 package controllers
 
 import (
-	"blog/models"
+	"../models"
 	"bytes"
 	"crypto/md5"
 	"fmt"

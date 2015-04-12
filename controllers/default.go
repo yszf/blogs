@@ -1,7 +1,7 @@
 package controllers
 
 import (
-	"blog/models"
+	"../models"
 	"github.com/astaxie/beego"
 	"github.com/astaxie/session"
 	"strconv"
@@ -35,7 +35,7 @@ func (this *MainController) Get() {
 	for k, pk := range bloglist {
 		m := make(map[string]interface{}, 2)
 		m["Blog"] = pk
-		if this.Ctx.Params[":title"] == pk.Title {
+		if this.Ctx.Request.Form.Get(":title") == pk.Title {
 			m["Cru"] = true
 		} else {
 			m["Cru"] = false
