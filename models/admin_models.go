@@ -1,9 +1,9 @@
 package models
 
 import (
-	_ "code.google.com/p/go-mysql-driver/mysql"
 	"database/sql"
 	"github.com/astaxie/beedb"
+	_ "github.com/go-sql-driver/mysql"
 	"strings"
 )
 

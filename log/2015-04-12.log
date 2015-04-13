@@ -1,0 +1,30 @@
+2015/04/12 19:25:18 [log.go:108] [D] parse template err: index.tpl template: index.tpl:107: function "markdown" not defined 
+2015/04/12 19:25:18 [log.go:108] [D] parse template err: admin/index.tpl template: admin/index.tpl:39: function "markdown" not defined 
+2015/04/12 19:25:18 [app.go:103] [I] http server Running on :8080
+2015/04/12 19:26:49 [log.go:108] [D] parse template err: admin/index.tpl template: admin/index.tpl:39: function "markdown" not defined 
+2015/04/12 19:26:49 [log.go:108] [D] parse template err: index.tpl template: index.tpl:107: function "markdown" not defined 
+2015/04/12 19:26:49 [app.go:103] [I] http server Running on :8080
+2015/04/12 19:27:50 [router.go:845] [D] | GET        | /                                        | 2.0481172s       | match      | /                                        | 
+2015/04/12 19:28:17 [router.go:845] [D] | GET        | /reg                                     | 0                | match      | /reg                                     | 
+2015/04/12 19:30:21 [log.go:108] [D] parse template err: admin/index.tpl template: admin/index.tpl:39: function "markdown" not defined 
+2015/04/12 19:30:21 [log.go:108] [D] parse template err: index.tpl template: index.tpl:107: function "markdown" not defined 
+2015/04/12 19:30:21 [app.go:103] [I] http server Running on :8080
+2015/04/12 19:33:43 [log.go:108] [D] parse template err: admin/index.tpl template: admin/index.tpl:39: unexpected "<" in operand; missing space? 
+2015/04/12 19:33:43 [log.go:108] [D] parse template err: index.tpl template: index.tpl:107: unexpected "<" in operand; missing space? 
+2015/04/12 19:33:43 [app.go:103] [I] http server Running on :8080
+2015/04/12 19:34:26 [app.go:103] [I] http server Running on :8080
+2015/04/12 19:34:31 [router.go:845] [D] | GET        | /reg                                     | 0                | match      | /reg                                     | 
+2015/04/12 19:34:33 [router.go:845] [D] | GET        | /reg                                     | 0                | match      | /reg                                     | 
+2015/04/12 19:35:40 [router.go:845] [D] | GET        | /                                        | 2.0311161s       | match      | /                                        | 
+2015/04/12 19:35:40 [router.go:845] [D] | GET        | /                                        | 2.0011145s       | match      | /                                        | 
+2015/04/12 19:35:46 [app.go:103] [I] http server Running on :8080
+2015/04/12 19:35:52 [router.go:845] [D] | GET        | /                                        | 2.0481172s       | match      | /                                        | 
+2015/04/12 19:36:32 [app.go:103] [I] http server Running on :8080
+2015/04/12 19:36:39 [router.go:845] [D] | GET        | /                                        | 2.0341163s       | match      | /                                        | 
+2015/04/12 19:36:48 [router.go:845] [D] | GET        | /ref                                     | 0                | notmatch   | 
+2015/04/12 19:36:52 [router.go:845] [D] | GET        | /reg                                     | 9.0005ms         | match      | /reg                                     | 
+2015/04/12 19:37:01 [router.go:845] [D] | POST       | /reg                                     | 2.0021145s       | match      | /reg                                     | 
+2015/04/12 19:37:03 [router.go:845] [D] | GET        | /                                        | 2.0111151s       | match      | /                                        | 
+2015/04/12 19:37:40 [router.go:845] [D] | GET        | /about                                   | 1ms              | notmatch   | 
+2015/04/12 19:38:38 [router.go:845] [D] | GET        | /about                                   | 1ms              | notmatch   | 
+2015/04/12 19:38:41 [router.go:845] [D] | GET        | /contact                                 | 1ms              | notmatch   | 

@@ -1,8 +1,8 @@
 package admin
 
 import (
-	"blog/models"
-	"blog/utils"
+	"../../models"
+	"../../utils"
 	"github.com/astaxie/beego"
 	"github.com/astaxie/session"
 	_ "github.com/astaxie/session/providers/memory"
@@ -84,7 +84,7 @@ func (this *IndexController) Get() {
 
 	pageStr, err := utils.CreateLinks(conf)
 	if err != nil {
-		beego.BeeLogger.Fatal(err)
+		beego.BeeLogger.Critical("CreateLinks: ", err)
 	}
 
 	if pageStr == "404" {

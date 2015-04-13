@@ -1,8 +1,8 @@
 package admin
 
 import (
-	"blog/models"
-	"blog/utils"
+	"../../models"
+	"../../utils"
 	"github.com/astaxie/beego"
 	"github.com/astaxie/session"
 	_ "github.com/astaxie/session/providers/memory"

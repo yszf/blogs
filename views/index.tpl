@@ -44,7 +44,7 @@
             <span class="icon-bar"></span>
           </a>
           <a class="brand" href="#">Golang 技术博客</a>
-          <div class="nav-collapse collapse">            
+          <div class="nav-collapse collapse">
             <ul class="nav">
                <li class="active"><a href="/">首页</a></li>
                <li><a href="/about">关于我们</a></li>
@@ -67,27 +67,27 @@
         </div>
       </div>
 
-		
+
     </div>
 
     <div class="container-fluid">
       <div class="row-fluid">
         <div class="span3">
-			
-			
-			
+
+
+
 			<form action="/" method="get">
 		    <fieldset>
-				
+
 					<div class="input-append input-prepend">
 						<span class="add-on"><i class="icon-search"></i></span>
 						<input type="text" name="s" id="search" placeholder="Search" value="" />
 						<button type="submit" class="btn btn-primary">Search</button>
 					</div>
-		      
+
 		    </fieldset>
 			</form>
-		
+
 
           <div class="well sidebar-nav">
             <ul class="nav nav-list">
@@ -104,8 +104,8 @@
         </div><!--/span-->
         <div class="span9">
           <div class="hero-unit">
-				{{markdown .Content}}
-          </div>         
+				{{ .Content }}<!-- |markdown -->
+          </div>
         </div><!--/span-->
       </div><!--/row-->
 
