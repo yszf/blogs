@@ -1,9 +1,9 @@
 package controllers
 
 import (
-	"../models"
 	"github.com/astaxie/beego"
 	"github.com/astaxie/session"
+	"github.com/yszf/blogs/models"
 	"strconv"
 )
 
@@ -56,5 +56,5 @@ func (this *MainController) Get() {
 		this.Data["Username"] = username
 	}
 
-	this.TplNames = "index.tpl"
+	this.TplName = "index.tpl"
 }

@@ -1,13 +1,13 @@
 package controllers
 
 import (
-	"../models"
 	"bytes"
 	"crypto/md5"
 	"fmt"
 	"github.com/astaxie/beego"
 	"github.com/astaxie/session"
 	_ "github.com/astaxie/session/providers/memory"
+	"github.com/yszf/blogs/models"
 	"io"
 	"regexp"
 	"time"
@@ -26,11 +26,11 @@ func init() {
 }
 
 func (this *RegController) Get() {
-	this.TplNames = "reg.tpl"
+	this.TplName = "reg.tpl"
 }
 
 func (this *RegController) Post() {
-	this.TplNames = "reg.tpl"
+	this.TplName = "reg.tpl"
 	this.Ctx.Request.ParseForm()
 	username := this.Ctx.Request.Form.Get("username")
 	password := this.Ctx.Request.Form.Get("password")

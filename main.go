@@ -1,9 +1,9 @@
 package main
 
 import (
-	"./controllers"
-	"./controllers/admin"
 	"github.com/astaxie/beego"
+	"github.com/yszf/blogs/controllers"
+	"github.com/yszf/blogs/controllers/admin"
 )
 
 func main() {

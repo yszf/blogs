@@ -1,10 +1,10 @@
 package admin
 
 import (
-	"../../models"
 	"github.com/astaxie/beego"
 	"github.com/astaxie/session"
 	_ "github.com/astaxie/session/providers/memory"
+	"github.com/yszf/blogs/models"
 	"strconv"
 )
 
@@ -31,7 +31,7 @@ func (this *DelBlogController) Prepare() {
 
 func (this *DelBlogController) Get() {
 	this.Layout = "admin/layout.html"
-	this.TplNames = "admin/delblog.tpl"
+	this.TplName = "admin/delblog.tpl"
 	this.Ctx.Request.ParseForm()
 	id, _ := strconv.Atoi(this.Ctx.Request.Form.Get(":id"))
 	blogInfo := models.GetBlogInfoById(id)

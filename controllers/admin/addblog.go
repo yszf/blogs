@@ -1,11 +1,11 @@
 package admin
 
 import (
-	"../../models"
-	"../../utils"
 	"github.com/astaxie/beego"
 	"github.com/astaxie/session"
 	_ "github.com/astaxie/session/providers/memory"
+	"github.com/yszf/blogs/models"
+	"github.com/yszf/blogs/utils"
 	"time"
 	//"fmt"
 )
@@ -33,7 +33,7 @@ func (this *AddBlogController) Prepare() {
 
 func (this *AddBlogController) Get() {
 	this.Layout = "admin/layout.html"
-	this.TplNames = "admin/addblog.tpl"
+	this.TplName = "admin/addblog.tpl"
 }
 
 func (this *AddBlogController) Post() {

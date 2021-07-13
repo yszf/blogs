@@ -1,11 +1,11 @@
 package admin
 
 import (
-	"../../models"
-	"../../utils"
 	"github.com/astaxie/beego"
 	"github.com/astaxie/session"
 	_ "github.com/astaxie/session/providers/memory"
+	"github.com/yszf/blogs/models"
+	"github.com/yszf/blogs/utils"
 	"strconv"
 )
 
@@ -92,5 +92,5 @@ func (this *IndexController) Get() {
 	}
 	this.Data["PageStr"] = "<ul>" + pageStr + "</ul>"
 	this.Layout = "admin/layout.html"
-	this.TplNames = "admin/index.tpl"
+	this.TplName = "admin/index.tpl"
 }

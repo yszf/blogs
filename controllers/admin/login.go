@@ -1,13 +1,13 @@
 package admin
 
 import (
-	"../../models"
 	"bytes"
 	"crypto/md5"
 	"fmt"
 	"github.com/astaxie/beego"
 	"github.com/astaxie/session"
 	_ "github.com/astaxie/session/providers/memory"
+	"github.com/yszf/blogs/models"
 	"io"
 )
 
@@ -24,12 +24,12 @@ func init() {
 }
 
 func (this *LoginController) Get() {
-	this.TplNames = "admin/signin.tpl"
+	this.TplName = "admin/signin.tpl"
 }
 
 func (this *LoginController) Post() {
 	//数据处理
-	this.TplNames = "admin/signin.tpl"
+	this.TplName = "admin/signin.tpl"
 	this.Ctx.Request.ParseForm()
 	username := this.Ctx.Request.Form.Get("username")
 	password := this.Ctx.Request.Form.Get("password")

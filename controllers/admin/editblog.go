@@ -1,11 +1,11 @@
 package admin
 
 import (
-	"../../models"
-	"../../utils"
 	"github.com/astaxie/beego"
 	"github.com/astaxie/session"
 	_ "github.com/astaxie/session/providers/memory"
+	"github.com/yszf/blogs/models"
+	"github.com/yszf/blogs/utils"
 	"strconv"
 	"time"
 )
@@ -33,7 +33,7 @@ func (this *EditBlogController) Prepare() {
 
 func (this *EditBlogController) Get() {
 	this.Layout = "admin/layout.html"
-	this.TplNames = "admin/editblog.tpl"
+	this.TplName = "admin/editblog.tpl"
 	this.Ctx.Request.ParseForm()
 	id, _ := strconv.Atoi(this.Ctx.Request.Form.Get(":id"))
 	blogInfo := models.GetBlogInfoById(id)

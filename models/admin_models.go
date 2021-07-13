@@ -9,7 +9,7 @@ import (
 
 const (
 	mysql_user    = "root"
-	mysql_pass    = ""
+	mysql_pass    = "123456"
 	mysql_host    = "localhost"
 	mysql_port    = "3306"
 	database_name = "myblog"
